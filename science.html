@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Прохор">
+  <meta name="description"
+    content="Наука и планеты в фильме «Интерстеллар»: чёрная дыра, замедление времени, миры экспедиции.">
+  <meta name="keywords" content="Интерстеллар, чёрная дыра, замедление времени, Кип Торн, планета Миллера">
+  <title>Интерстеллар — наука и миры</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="shell">
+    <aside class="side">
+      <p class="brand">INTERSTELLAR</p>
+      <p class="sub">Фан-сайт о фильме</p>
+      <h4>Страницы</h4>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a class="active" href="science.html">Наука и миры</a></li>
+        <li><a href="links.html">Ссылки</a></li>
+      </ul>
+      <h4>На этой странице</h4>
+      <ul class="local">
+        <li><a href="#planets">Планеты</a></li>
+        <li><a href="#ideas">Научные идеи</a></li>
+        <li><a href="#lab">Лаборатория текста</a></li>
+      </ul>
+    </aside>
+
+    <div>
+      <section class="hero" id="top">
+        <h1>Что в фильме правда, а что кино</h1>
+        <p>Миры экспедиции и идеи, на которых держится сюжет</p>
+      </section>
+
+      <main class="content">
+        <h2 id="planets">Планеты экспедиции</h2>
+        <p>Экипаж «Эндюранс» изучает миры возле чёрной дыры Гаргантюа. Они очень разные, и у каждого свои опасности.</p>
+        <table>
+          <caption>Миры экспедиции (дополните своими наблюдениями)</caption>
+          <thead>
+            <tr>
+              <th>Мир</th>
+              <th>Особенность</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Планета Миллера</td>
+              <td>Океан и гигантские волны; рядом с дырой время идёт гораздо медленнее</td>
+            </tr>
+            <tr>
+              <td>Планета Манна</td>
+              <td>Ледяной мир с суровыми условиями</td>
+            </tr>
+            <tr>
+              <td>Планета Эдмундса</td>
+              <td>Ещё один кандидат на новый дом</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row3">
+          <figure>
+            <img src="img/miller.jpg" alt="Планета Миллера">
+            <figcaption>Планета Миллера</figcaption>
+          </figure>
+          <figure>
+            <img src="img/mann.jpg" alt="Планета Манна">
+            <figcaption>Планета Манна</figcaption>
+          </figure>
+          <figure>
+            <img src="img/edmunds.jpg" alt="Планета Эдмундса">
+            <figcaption>Планета Эдмундса</figcaption>
+          </figure>
+        </div>
+
+        <h2 id="ideas">Научные идеи</h2>
+        <img class="fr" src="img/gargantua.jpg" width="340" height="230" alt="Чёрная дыра">
+        <h3>Что показано в фильме</h3>
+        <ul class="dots">
+          <li>Гравитационное замедление времени</li>
+          <li>Червоточина как путь между галактиками</li>
+          <li>Чёрная дыра с аккреционным диском</li>
+          <li>Передача информации через гравитацию</li>
+        </ul>
+        <h3>Как проходит миссия</h3>
+        <ol>
+          <li>Старт с Земли и полёт к Сатурну</li>
+          <li>Прохождение через червоточину</li>
+          <li>Исследование планет у Гаргантюа</li>
+          <li>Финальное решение и возвращение к людям</li>
+        </ol>
+        <div class="stop"></div>
+
+        <h2 id="lab">Лаборатория текста</h2>
+        <div class="lab">
+          <h3>Удалить слова длиннее 7 букв</h3>
+          <textarea id="sentence1"
+            rows="2">Гравитационное замедление времени превращает часы на планете в годы на Земле</textarea>
+          <button onclick="removeLongWords()">Удалить длинные слова</button>
+        </div>
+        <div class="lab">
+          <h3>Самая частая буква</h3>
+          <textarea id="sentence2" rows="2">Чёрная дыра искривляет пространство и время вокруг себя</textarea>
+          <button onclick="mostFrequentLetter()">Найти букву</button>
+        </div>
+        <div class="lab">
+          <h3>Удалить цифры (результат в новом окне)</h3>
+          <textarea id="sentence3"
+            rows="2">Фильм вышел в 2014 году, длится 169 минут и получил 5 номинаций на «Оскар»</textarea>
+          <button onclick="removeDigits()">Удалить цифры</button>
+        </div>
+
+        <p><a href="#top">↑ Наверх</a> · <a href="index.html">На главную</a></p>
+      </main>
+      <footer>Лабораторная № 2 — «Мой первый хоумпейдж»</footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
